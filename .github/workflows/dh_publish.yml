@@ -3,6 +3,7 @@ name: Build and publish on DockerHub
 on:
   schedule:
     - cron: '30 7 * * *'
+  workflow-dispatch:
 
 jobs:
   push_to_registry:
